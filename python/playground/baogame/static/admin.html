@@ -1,0 +1,173 @@
+<!doctype>
+<html>
+<head>
+	<title>暴走后台</title>
+	<script src="/static/js/JPack.js"></script>
+	<script src="/static/js/zepto.js"></script>
+	<script src="/static/js/socket.js"></script>
+	<style>
+		.btn {
+			display: block;
+			border: 1px solid #004;
+			padding: 10px 20px;
+			border-radius: 5px;
+			margin: 20px;
+			text-align: center;
+			color: #004;
+			text-decoration: none;
+		}
+		.btn:active {
+			background: #004;
+			color: #fff;
+		}
+		.btn.banned {
+			background: #c22;
+		}
+		.user {
+			margin: 5px;
+			border: 1px solid black;
+			padding: 5px;
+			display: -webkit-box;
+		}
+		.client {
+			width: 200px;
+			background: #eee;
+		}
+		.player {
+			-webkit-box-flex: 1;
+			width: 100%;
+		}
+		.action {
+			width: 200px;
+			background: #eee;
+		}
+		.items {
+			display: -webkit-box;
+		}
+		.rooms span {
+			display: inline-block;
+			background: rgba(255,255,0,.1);
+			border: 1px solid rgb(255,255,0);
+			padding: 10px;
+			margin: 10px;
+		}
+		.rooms span.active {
+			background: rgba(255,255,0,.4);
+		}
+	</style>
+</head>
+<body>
+	<div class="rooms"></div>
+	<a class="btn btn-heap">heapdump</a>
+	<div class="items">
+		生成道具：
+		<a class="btn" data-type="0">无敌</a>
+		<a class="btn" data-type="1">枪</a>
+		<a class="btn" data-type="2">地雷</a>
+		<a class="btn" data-type="3">毒药</a>
+		<a class="btn" data-type="4">隐身</a>
+		<a class="btn" data-type="5">?</a>
+		<a class="btn" data-type="6">二段跳</a>
+		<a class="btn" data-type="7">喷气背包</a>
+		<a class="btn" data-type="8">手雷</a>
+	</div>
+	<div class="users"></div>
+</body>
+</html>
+<script>
+
+	var code = localStorage.code
+
+	socket.on('initFail', function () {
+		alert('fail')
+	})
+	socket.emit('init', {
+	 	code: code
+	});
+	socket.on('tick', function (data) {
+		for (var i = 0; i < data.users.length; i++) {
+			data.users[i] = Packs.userPack.decode(data.users[i]);
+		}
+		for (var i = 0; i < data.items.length; i++) {
+			data.items[i] = Packs.itemPack.decode(data.items[i]);
+		}
+		for (var i = 0; i < data.mines.length; i++) {
+			data.mines[i] = Packs.minePack.decode(data.mines[i]);
+		}
+		var html = '<div class="clients">';
+		data.clients && data.clients.forEach(function (client) {
+			var p1 = null;
+			data.users.forEach(function (user) {
+				if (client.p1 == user.id) {
+					p1 = user;
+					return;
+				}
+			});
+			if (p1) {
+				var playerData = `<div class="player">
+					${p1.status},${p1.score}<br/>
+					${p1.carry || "空"} : ${p1.carryCount}
+				</div>`;
+			} else if (client.admin) {
+				var playerData = '<div class="player">admin</div>';
+			} else {
+				var playerData = '<div class="player">ob</div>';
+			}
+			if (client.banned) {
+				var banBtn = '<a data-clientid="'+client.id+'" class="btn ban banned">取消ban</a>';
+			} else {
+				var banBtn = '<a data-clientid="'+client.id+'" class="btn ban">ban</a>';
+			}
+			html += `<div class="user">
+				<div class="client">
+					名称: ${client.name}<br>
+					IP: ${client.ip}<br>
+					KDH: ${client.kill},${client.death},${client.highestKill}
+				</div>
+				${playerData}
+				<div class="action">${banBtn}</div>
+			</div>`;
+		});
+		$('.users').html(html);
+	});
+	socket.begin();
+	$('.users').on('click', '.btn.ban', function (e) {
+		var $t = $(e.currentTarget);
+		var clientid = $t.data('clientid');
+		if ($t.is('.banned')) {
+			socket.emit('unban', clientid);
+			$t.removeClass('banned');
+		} else {
+			socket.emit('ban', clientid);
+			$t.addClass('banned')
+		}
+	});
+	$('.items .btn').click(function (e) {
+		var type = $(e.currentTarget).data('type');
+		socket.emit('createItem', type);
+	});
+	$('.btn-heap').click(function () {
+		socket.emit('heapdump');
+	})
+
+	$.ajax({
+		url: "/roomsData",
+		success: function (t) {
+			var count = JSON.parse(t).length;
+			if (count < 2) {return}
+			$('.rooms').append('<span class="active">1</span>');
+			for (var i = 1; i < count; i++) {
+				$('.rooms').append('<span>'+(i+1)+'</span>');
+			}
+			$('.rooms span').click(function (e) {
+				var $t = $(e.currentTarget);
+				if (!$t.is('.active')) {
+					$('.rooms span.active').removeClass('active');
+					$t.addClass('active');
+					socket.close();
+					socket.begin($t.index());
+				}
+			});
+		}
+	});
+</script>
