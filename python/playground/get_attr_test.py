@@ -13,13 +13,13 @@ class Chain(object):
     def __str__(self):
         return self._path
 
-    def __call__(self, user = ''):
+    def __call__(self, args = ''):
         print('call process')
         print('path is now:', self._path)
-        return self.__getattr__(':' + user)
+        return self.__getattr__(':' + args)
 
     __repr__ = __str__
 
-example = Chain().something('sth').repos('another things')
+example = Chain().something('one thing').repos('another things')
 print(example)
 # '/something/:sth/repos/:another things'

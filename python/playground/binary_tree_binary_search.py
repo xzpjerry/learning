@@ -43,18 +43,18 @@ class mytree:
             else:
                 node.rightc = Node(value)
 
-    def find(self, target):
+    def binary_search(self, target):
         if self.Root != None:
-            return self._find(target, self.Root)
+            return self._binary_search(target, self.Root)
         return False
 
-    def _find(self, target, node):
+    def _binary_search(self, target, node):
         if target == node.value:
             return True
         elif target > node.value and node.rightc != None:
-            return self._find(target, node.rightc)
+            return self._binary_search(target, node.rightc)
         elif target < node.value and node.leftc != None:
-            return self._find(target, node.leftc)
+            return self._binary_search(target, node.leftc)
         else:
             return False
 
@@ -78,7 +78,7 @@ class mytree:
             pass
 
     def _get_the_mid_and_add(self, tmp_list):
-        if len(tmp_list) == 1 and not self.find(tmp_list[0]):
+        if len(tmp_list) == 1 and not self.binary_search(tmp_list[0]):
             self.add(tmp_list[0])
         elif len(tmp_list) > 1:
             len_of_list = len(tmp_list)
@@ -90,9 +90,27 @@ class mytree:
         else:
             pass
 
+    def dfs_search(self,target):
+        if self.Root != None:
+            self._dfs_search(target)
+        return False
+
+    def _dfs_search(self,target, node = None):
+        if node == None:
+            node = self.Root
+        print('dfs now at %s' % node.value)
+        if node.value == target:
+            return True
+        else:
+            if node.leftc != None:
+                self._dfs_search(node.leftc)
+            if node.rightc != None:
+                self._dfs_search(node.rightc)
+        return False
+
 
 a = mytree()
-arry = []
-a.get_the_mid_and_add(arry)
+arry = [0,1,2,3,4,5,6]
+for ele in arry:
+    a.add(int(ele))
 a.printTree()
-print(a.find(3))
