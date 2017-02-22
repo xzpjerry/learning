@@ -2,19 +2,21 @@ print('*************** Multiprocessing Process ***********************')
 from multiprocessing import Process
 import os
 
+
 def run_proc(name):
     print('Child process %s (%s)' % (name, os.getpid()))
 
 if __name__ == '__main__':
     print('Parent process is %s' % os.getpid())
 
-    p = Process(target = run_proc, args = ('test',))
+    p = Process(target=run_proc, args=('test',))
     print('Child process will start;')
     p.start()
     p.join()
     print('Child process ended')
 
 print('************ Multiprocessing POOL ******************')
+
 
 def test_delay(name):
     print('Run task %s (%s)' % (name, os.getpid()))
@@ -25,13 +27,14 @@ def test_delay(name):
 
 if __name__ == '__main__':
     from multiprocessing import Pool
-    import time, random
+    import time
+    import random
 
     print('Parent process is %s' % os.getpid())
     pool_size = 2
     p = Pool(pool_size)
     for i in range(pool_size):
-        p.apply_async(test_delay, args = (i,)) 
+        p.apply_async(test_delay, args=(i,))
 
     print('Iteration Ended')
 

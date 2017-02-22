@@ -1,9 +1,13 @@
+from queue import Queue
+
+
 class Node(object):
 
     def __init__(self, value):
         self.left = None
         self.right = None
         self.value = value
+
 
 class tree(object):
 
@@ -64,7 +68,3 @@ class tree(object):
     def __str__(self):
         self.printTree(self.root)
         return self.str_result
-
-#example = tree([10,5,1])
-#print(example)
-# 1,5,10
