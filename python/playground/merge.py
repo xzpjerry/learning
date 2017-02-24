@@ -2,6 +2,7 @@
 
 
 
+
 class database(object):
     def __init__(self, tmp_data):
         self.original_data = tmp_data
@@ -22,8 +23,9 @@ class database(object):
             return tmp_list
         mid_pos = len_of_list // 2
         listA = tmp_list[:mid_pos]
-        listB = tmp_list[mid_pos:len_of_list]
         listA = self._mergeSort(listA)
+
+        listB = tmp_list[mid_pos:len_of_list]
         listB = self._mergeSort(listB)
         return self._mergeAll(listA,listB)
 
@@ -48,4 +50,6 @@ class database(object):
             tmp_list.extend(tmp_listA[pointerA:])
         return tmp_list
 
-example = database([-1, 0, 2, -2, 3, 6, -3, 5, 1, 4])
+if __name__ == '__main__':
+
+    example = database([-1, 0, 2, -2, 3, 6, -3, 5, 1, 4])
