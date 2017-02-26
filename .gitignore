@@ -1,0 +1,14 @@
+# Mine
+probook.git
+pastinstall
+backup
+*.pdf
+*.DS_Store
+
+# python
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+
+# system
