@@ -1,14 +1,14 @@
 # !/usr/bin/env python3
 '''
-Is_member assignment, CIS 210 
+Test Is_member assignment, CIS 210 
 
 Author: Zhipeng Xie
 
 Credits: 'python.org' official document
 
-To show whether a number is a member in a tuple
+Testing function in Is_member.py 
 '''
-
+import unittest
 
 class database(object):
     def __init__(self, tmp_tuple, target):
@@ -126,129 +126,67 @@ class database(object):
                 print('something wrong')
         return False
 
-example = database((24, 25, 26, 28), 27)
-print(example)
-print('****************')
 
-example = database((1, 3, 5, 7), 4)
-print(example)
-print('****************')
+class test_isMember(unittest.TestCase):
 
-example = database((0, 1, 4, 5, 6, 8), 4)
-print(example)
-print('****************')
-
-example = database((0, 1, 2, 3, 4, 5, 6), 3)
-print(example)
-print('****************')
-
-example = database((1, 3), 1)
-print(example)
-print('****************')
-
-example = database((), 1)
-print(example)
-print('****************')
-
-example = database((43,), 44)
-print(example)
-print('****************')
-
-example = database((42,), 42)
-print(example)
-print('****************')
-
-example = database((1,8,19,26,42,50,55,180,200), 26)
-print(example)
-print('****************')
-# Challenge ONE
-
-class starr(object):
-    def __init__(self, max):
-        self.max = max
-
-    def _num_of_starr(self, n):
+    def test_is_member(self):
         '''
-        Effect: Using recursive method to calculate
-        the total number of the n row starr
+        (None) -> None
 
-        Input: Row number
+        Effect: To test is_member functions in the database class
 
-        Output: Number of starr
-         '''
-        if n == 1:
-            return 1
-        else:
-            return self._num_of_starr(n - 1) * 2 + n
+        No input needed
 
-    def __str__(self):
+        Nothing return, but print result
+
+        >>> unnittest.main()
+        Test will start
+        Testing: ((23, 24, 25, 26, 27), 5)
+        Passed!
+        Testing: ((0, 1, 2, 3, 4, 5, 6), 3)
+        Passed!
+        Testing: ((0, 1, 4, 5, 6, 8), 4)
+        Passed!
+        Testing: ((43,), 44)
+        Passed!
+        Testing: ((), 99)
+        Passed!
+        Testing: ((99, 100), 101)
+        Passed!
+        Testing: ((42,), 42)
+        Passed!
+        Testing: ((1, 3, 5, 7), 4)
+        Passed!
+        Testing: ((1, 3), 1)
+        Passed!
+        Testing: ((2, 10), 10)
+        Passed!
+        .
+        ----------------------------------------------------------------------
+        Ran 1 test in 0.001s       # 1 test means this ONE test-function
+
+        OK
         '''
-        Effect: To print the starr
+        test_cases = {((1,3,5,7), 4):False, ((23,24,25,26,27), 5): False,
+                     ((0, 1, 4, 5, 6, 8), 4): True, ((0, 1, 2, 3, 4, 5, 6), 3): True,
+                     ((1,3),1): True, ((2,10),10): True, ((99, 100), 101): False,
+                     ((42,), 42): True, ((43,), 44): False, ((), 99): False
+                     }
+        for test_case in test_cases:
+            print('Testing:' ,test_case)
+            tmp_case = database(test_case[0], test_case[1])
+            self.assertEqual(tmp_case._isMemberI(), test_cases[test_case])
+            self.assertEqual(tmp_case._isMemberR(tmp_case.original_data), test_cases[test_case])
+            print('Passed!')
 
-        No input
+        return None
 
-        Output: The starrs of Nth row
 
-        Example:
-        >>> for i in range(1, 4):
-                print(starr(i))
-        '*
-         ****
-         ***********'
-        '''
-        result = '%s' % (self._num_of_starr(self.max) * '*')
-        return result
+if __name__ == '__main__':
+    print('Test will start')
+    unittest.main()
 
-print('Star printer begin:\n')
-for i in range(1, 4):
-    print(starr(i))
-
-# Challenge TWO
-
-class another_database(database):
-    '''
-    Inherited from the database class
-    '''
-    def _convertor(self, nested_list):
-        '''
-        (number or Iterable thing) -> list
-
-        Effect: To convert the nested list or tuple into
-        flat list
-
-        Input: Number or Iterable object
-
-        Output: Flat list containg all the elements of nested 
-        list
-
-        >>> print(self._convertor((1, (2,(3),4), (5, 6)), 3))
-        [1, 2, 3, 4, 5, 6]
-        '''
-        result = []
-        for ele in nested_list:
-            if isinstance(ele, int):
-                result.append(ele)
-            else:
-                result.extend(self._convertor(ele))
-        return result
-
-    def __init__(self, tmp_tuple, target):
-        '''
-        Setting the original data and sorting it
-
-        Input: Raw tuple
-
-        No output
-        '''
-        self.original_data = self._convertor(tmp_tuple)
-        self.original_data = sorted(self.original_data)
-        self.target = target
-
-print(another_database((1, (2,(3),4), (5, 6)), 3))
 '''
-result:
-To find: 3
-In the sequence: [1, 2, 3, 4, 5, 6]
-Recursive result: True
-Iterative result: True
+Since I've used the unittest, I think I've already implement the
+challenges as well
 '''

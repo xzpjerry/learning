@@ -1,4 +1,4 @@
-# !/usr/bin/engv python3
+# !/usr/bin/env python3
 '''
     Memorable_pin decode machine. 
 
