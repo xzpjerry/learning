@@ -130,7 +130,7 @@ def removeMatches(original_str, exception_str):
 	return new_str
 	'''
 
-plaintext = raw_input('plaintext: ')
+plaintext = input('plaintext: ')
 the_key = genKeyFromPass('test')
 encryptedtext = substitutionEncrypt(plaintext, the_key)
 decryptedtext = substitutionDecrypt(encryptedtext, the_key)
