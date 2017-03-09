@@ -86,11 +86,13 @@ class database(object):
         self.mean = None
         self.max_count = None
         self.median = None
+        '''
         self._mean()
         self._median()
         self._mode()
         self._frequencyTable()
-        self._frequencyChart()
+        #self._frequencyChart()
+        '''
 
     def _mean(self):
         '''
@@ -234,6 +236,7 @@ class database(object):
 
 if __name__ == '__main__':
     example = database(sample_data)
+    example._frequencyChart()
     print(example)
 
     #another_example = database([1,2,3,4])
