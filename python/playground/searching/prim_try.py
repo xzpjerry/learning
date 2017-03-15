@@ -9,15 +9,14 @@ Effect:
 '''
 
 graph = {
-        'vertices': ['A', 'B', 'C', 'D', 'E'],
+        'vertices': ['A', 'B', 'C', 'D', 'Z'],
         'edges': set([
-            (1, 'A', 'E'),
+            (2, 'A', 'C'),
             (3, 'A', 'B'),
-            (4, 'B', 'E'),
-            (5, 'B', 'C'),
-            (6, 'E', 'C'),
-            (7, 'E', 'D'),
-            (2, 'C', 'D'),
+            (4, 'Z', 'D'),
+            (6, 'D', 'C'),
+            (8, 'Z', 'B'),
+            (2, 'B', 'D')
             ])
         }
 
@@ -35,7 +34,7 @@ class prim(object):
             self.rank[vertex] = 0
             self.unvisted.append(vertex)
 
-        self.optimal_tree = set()
+        self.optimal_tree = []
         self.unvisted.remove(start)
         self.visted.append(start)
         self.prim_main()
@@ -56,7 +55,7 @@ class prim(object):
 
     def prim_main(self):
         while len(self.unvisted) > 0:
-            print(self.unvisted)
+            print(self.parent)
             for edge in self.edges:
                 weight, v0 ,v1 = edge
                 has_v0 = v0 in self.visted
@@ -67,12 +66,12 @@ class prim(object):
                             self.visted.append(v1)
                             self.unvisted.remove(v1)
                             self.union(v0,v1)
-                            self.optimal_tree.add(edge)
+                            self.optimal_tree.append(edge)
                         else:
                             self.visted.append(v0)
                             self.unvisted.remove(v0)
                             self.union(v0,v1)
-                            self.optimal_tree.add(edge)
+                            self.optimal_tree.append(edge)
                         self.edges.remove(edge)
                         break
 

@@ -2,9 +2,9 @@
 '''
 Author: Zhipeng Xie
 
-Topic:
+Topic: Equake_data analysis 1
 
-Effect:
+Effect: Analysis data from a http link
 
 '''
 import urllib.request
@@ -13,6 +13,18 @@ import re
 
 
 def readeqi():
+    '''
+    none -> list
+
+    effect: to read a url from usgs, and filter the magnitude info
+
+    no input
+
+    output: a list of magnitude numbers
+
+    >>> readeqi()
+    [5.2, 5.1, 6.0, 5.9, 5.9, 6.0, 5.6, 5.6, 5.7, 5.0, 5.0, 5.2, 5.1, 5.4, 5.2, 5.6]
+    '''
     url = 'http://earthquake.usgs.gov/fdsnws/event/1/\
     query?format=csv\
     &starttime=1916-02-01\
@@ -31,6 +43,17 @@ def readeqi():
 
 
 def equake_analysis(mag_list):
+    '''
+    (list) -> tuple
+
+    effect: Using the previous project's class to analysis the magnitude
+    number list
+
+    input: magnitude info list
+
+    output: a tuple of mean, median, modelist value and also my raw
+    analysis class instance
+    '''
     whole_analysis = database(mag_list)
     whole_analysis._mean()
     whole_analysis._median()
@@ -41,6 +64,35 @@ def equake_analysis(mag_list):
 
 
 def equake_report(mag_list, mmm_tuple, need_chart):
+    '''
+    (list, tuple, bool) -> none
+
+    effect: integrate all the analysis infomations into a string,
+    and if we need a analysis chart, using previous project's function
+    to draw it
+
+    input: magnitude list, tuple from the result equake_analysis, boolean
+    of whether we need a chart
+
+    output: none
+
+    >>> mag_list = readeqi()
+        mmm_tuple = equake_analysis(mag_list)
+        equake_report(mag_list, mmm_tuple, True)
+    ITEM FREQUENCY
+    5.0         2
+    5.1         2
+    5.2         3
+    5.4         1
+    5.6         3
+    5.7         1
+    5.9         2
+    6.0         2
+    mean: 5.468750
+    median: 5.500000
+    mode_list: [5.6, 5.2]
+    (Draw a chart)
+    '''
     result = ''
     result += 'mean: %f' % mmm_tuple[0]
     result += '\nmedian: %f' % mmm_tuple[1]
@@ -54,8 +106,31 @@ def equake_report(mag_list, mmm_tuple, need_chart):
 
 
 def equake_main():
+    '''
+    none -> none
+
+    effect: main function, calling functions above
+
+    no input, output
+
+    >>> equake_main()
+    ITEM FREQUENCY
+    5.0         2
+    5.1         2
+    5.2         3
+    5.4         1
+    5.6         3
+    5.7         1
+    5.9         2
+    6.0         2
+    mean: 5.468750
+    median: 5.500000
+    mode_list: [5.6, 5.2]
+    (Draw a chart)
+    '''
     mag_list = readeqi()
     mmm_tuple = equake_analysis(mag_list)
     equake_report(mag_list, mmm_tuple, True)
+    return None
 
 equake_main()
