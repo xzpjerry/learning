@@ -1,0 +1,4 @@
+a) M^2 == 1:    There's at least a path from i to j
+    M^2 == 0:   There's no path from i to j
+
+c)  M^2 == k: The shortest path, from i to j, weights k

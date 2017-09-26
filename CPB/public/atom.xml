@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Zippo&#39;s blog</title>
+  <subtitle>观星棚</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blog.starr.vip/"/>
+  <updated>2017-03-18T01:52:10.000Z</updated>
+  <id>https://blog.starr.vip/</id>
+  
+  <author>
+    <name>Zippo</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Transfering data to github io</title>
+    <link href="https://blog.starr.vip/2017/03/17/Transfering_test/"/>
+    <id>https://blog.starr.vip/2017/03/17/Transfering_test/</id>
+    <published>2017-03-18T01:52:10.000Z</published>
+    <updated>2017-03-18T01:52:10.000Z</updated>
+    
+    <content type="html">&lt;p&gt;I just found out that using github is really convinient &lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      Testing
+    
+    </summary>
+    
+      <category term="git" scheme="https://blog.starr.vip/categories/git/"/>
+    
+    
+      <category term="git" scheme="https://blog.starr.vip/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git_branch</title>
+    <link href="https://blog.starr.vip/2017/02/27/git_branch/"/>
+    <id>https://blog.starr.vip/2017/02/27/git_branch/</id>
+    <published>2017-02-28T01:52:10.000Z</published>
+    <updated>2017-02-28T01:52:10.000Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;1.To list branch(s)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; git branch&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;another branch&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;another different branch&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# Star means current branch&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;2.To create a branch and switch to it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; git checkout -b name&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;M	AutoFlux.scpt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;M	myblog&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;M	python/.DS_Store&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;M	python/cipher.py&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;M	python/playground/.DS_Store&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Switched to a new branch &amp;apos;name&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;3.Doing your work and then commit it as usual&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;4.Merge to the master branch&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; git merge name&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; Updating be090ce..78a04d9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; Fast-forward&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; AutoFlux.scpt                   | Bin 1602 -&amp;gt; 1598 bytes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; README.md                       |   2 ++&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; python/.DS_Store                | Bin 10244 -&amp;gt; 14340 bytes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; python/Template/standard.py     |   9 +++++++++&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; python/cipher.py                |   2 +-&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; python/playground/.DS_Store     | Bin 6148 -&amp;gt; 6148 bytes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; python/playground/base64_try.py |  25 +++++++++++++++++++++++++&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; shell/io.sh                     |   4 ++++&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 8 files changed, 41 insertions(+), 1 deletion(-)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; create mode 100644 python/Template/standard.py&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; create mode 100644 python/playground/base64_try.py&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; create mode 100644 shell/io.sh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; ...&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;5.Delete the branch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt;&amp;gt; git branch -d name&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Deleted branch name (was 78a04d9).&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      Creating branch is quick
+    
+    </summary>
+    
+      <category term="git" scheme="https://blog.starr.vip/categories/git/"/>
+    
+    
+      <category term="git" scheme="https://blog.starr.vip/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git-101</title>
+    <link href="https://blog.starr.vip/2016/12/28/git/"/>
+    <id>https://blog.starr.vip/2016/12/28/git/</id>
+    <published>2016-12-28T12:52:10.000Z</published>
+    <updated>2016-12-28T12:52:10.000Z</updated>
+    
+    <content type="html">&lt;hr&gt;
+&lt;h1 id=&quot;Enableing-git&quot;&gt;&lt;a href=&quot;#Enableing-git&quot; class=&quot;headerlink&quot; title=&quot;Enableing git&quot;&gt;&lt;/a&gt;Enableing git&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;‘cd’ to target folder(in which you need to manage your modify to the files)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Entering&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;(to enable git in this folder)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;Adding-files-to-temporary-stage&quot;&gt;&lt;a href=&quot;#Adding-files-to-temporary-stage&quot; class=&quot;headerlink&quot; title=&quot;Adding files to temporary stage&quot;&gt;&lt;/a&gt;Adding files to temporary stage&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git add + &amp;apos;file1&amp;apos; + &amp;apos; &amp;apos; + &amp;apos;file2&amp;apos; + &amp;apos; &amp;apos;+...+&amp;apos; &amp;apos; + &amp;apos;fileN&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;if file’s name has special char, you need to add double quotes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;Commiting-change&quot;&gt;&lt;a href=&quot;#Commiting-change&quot; class=&quot;headerlink&quot; title=&quot;Commiting change&quot;&gt;&lt;/a&gt;Commiting change&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &amp;quot;you name it&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;Checking-status&quot;&gt;&lt;a href=&quot;#Checking-status&quot; class=&quot;headerlink&quot; title=&quot;Checking status&quot;&gt;&lt;/a&gt;Checking status&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git status&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;Back-to-privious-version-everything&quot;&gt;&lt;a href=&quot;#Back-to-privious-version-everything&quot; class=&quot;headerlink&quot; title=&quot;Back to privious version(everything)&quot;&gt;&lt;/a&gt;Back to privious version(everything)&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git reflog&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;find your commit, and copy the &lt;strong&gt;first part&lt;/strong&gt; of string(i.e: a5f620e of “a5f620e HEAD@{0}: reset: moving to HEAD~1”) aka the &lt;em&gt;commit_id&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;entering &lt;code&gt;git reset --hard &amp;#39;commit_id&amp;#39;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;you can also use ‘HEAD’ to represent the present version, ‘HEAD~N’ to represent the privious Nth version( i.e: &lt;code&gt;git reset --hard HEAD~1&lt;/code&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;Back-to-privious-version-certain-file&quot;&gt;&lt;a href=&quot;#Back-to-privious-version-certain-file&quot; class=&quot;headerlink&quot; title=&quot;Back to privious version(certain file)&quot;&gt;&lt;/a&gt;Back to privious version(certain file)&lt;/h1&gt;&lt;p&gt;There are 3 different situations in this case.&lt;/p&gt;
+&lt;h3 id=&quot;One-Haven’t-added-to-temporary-stage&quot;&gt;&lt;a href=&quot;#One-Haven’t-added-to-temporary-stage&quot; class=&quot;headerlink&quot; title=&quot;One:Haven’t added to temporary stage.&quot;&gt;&lt;/a&gt;One:Haven’t added to temporary stage.&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;simply using &lt;code&gt;git checkout -- file&lt;/code&gt;, bring this file to what it was when you commited it last time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Two-Already-have-added-to-temporary-but-luckily-you-haven’t-commited-it-yet&quot;&gt;&lt;a href=&quot;#Two-Already-have-added-to-temporary-but-luckily-you-haven’t-commited-it-yet&quot; class=&quot;headerlink&quot; title=&quot;Two:Already have added to temporary, but luckily you haven’t commited it yet.&quot;&gt;&lt;/a&gt;Two:Already have added to temporary, but luckily you haven’t commited it yet.&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;using &lt;code&gt;git reset HEAD file&lt;/code&gt;, bring you to &lt;strong&gt;situation one&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Three-Already-commit&quot;&gt;&lt;a href=&quot;#Three-Already-commit&quot; class=&quot;headerlink&quot; title=&quot;Three:Already commit.&quot;&gt;&lt;/a&gt;Three:Already commit.&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Refer “Back to privious version(everything)”&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      Basic using of Git
+    
+    </summary>
+    
+      <category term="git" scheme="https://blog.starr.vip/categories/git/"/>
+    
+    
+      <category term="git" scheme="https://blog.starr.vip/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Decorator</title>
+    <link href="https://blog.starr.vip/2016/12/21/Decorator/"/>
+    <id>https://blog.starr.vip/2016/12/21/Decorator/</id>
+    <published>2016-12-21T12:52:10.000Z</published>
+    <updated>2016-12-21T12:52:10.000Z</updated>
+    
+    <content type="html">&lt;hr&gt;
+&lt;p&gt;Decorator is useful when using others’ code.&lt;/p&gt;
+&lt;p&gt;Especially when you wanna add some function, say logging, to it.&lt;/p&gt;
+&lt;p&gt;To illustrate, we need a sample function first.&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;def sayhi():&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	print(&amp;apos;hi&amp;apos;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;func = sayhi&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;func()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# result: &amp;apos;hi&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;What-if-we-wanna-add-logging-function-so-that-it-can-tell-us-the-date-when-it-excuate&quot;&gt;&lt;a href=&quot;#What-if-we-wanna-add-logging-function-so-that-it-can-tell-us-the-date-when-it-excuate&quot; class=&quot;headerlink&quot; title=&quot;What if we wanna add logging function so that it can tell us the date when it excuate?&quot;&gt;&lt;/a&gt;What if we wanna add logging function so that it can tell us the date when it excuate?&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;def log(func):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	def wrapper(*args,**keyw):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		date = &amp;apos;2016-12-23&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		print(date)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		return func(*args,**keyw)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return wrapper&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;def sayhi():&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	print(&amp;apos;hi&amp;apos;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sayhi = log(sayhi)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;func = sayhi&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;func()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# result: &amp;apos;2016-12-23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#		   hi&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Basically, it means using another function, in order to add new funtion, to call target function.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It’s like”log(func) -&amp;gt; wrapper() -&amp;gt; func()”&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;We-can-also-custom-log-from-outside&quot;&gt;&lt;a href=&quot;#We-can-also-custom-log-from-outside&quot; class=&quot;headerlink&quot; title=&quot;We can also custom log from outside.&quot;&gt;&lt;/a&gt;We can also custom log from outside.&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;def log(text):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	def decorator(func)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		def wrapper(*args,**keyw):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			date = &amp;apos;2016-12-23&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			print(text,date)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			return func(*args,**keyw)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		return wrapper&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return decorator&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;def sayhi():&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	print(&amp;apos;hi&amp;apos;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sayhi = log(&amp;apos;This is a custom log:&amp;apos;)(sayhi)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;func = sayhi&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;func()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# result:&amp;apos;This is a custom log: 2016-12-23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#         hi&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;Why-not-be-simpler&quot;&gt;&lt;a href=&quot;#Why-not-be-simpler&quot; class=&quot;headerlink&quot; title=&quot;Why not be simpler?&quot;&gt;&lt;/a&gt;Why not be simpler?&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;def log(text):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	def decorator(func):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		def wrapper(*args,**keyw):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			date = &amp;apos;2016-12-23&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			print(text,date)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			return func(*args,**keyw)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		return wrapper&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return decorator&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@log(&amp;apos;This is a custom log:&amp;apos;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;def sayhi():&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	print(&amp;apos;hi&amp;apos;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;func = sayhi&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;func()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# result:&amp;apos;This is a custom log: 2016-12-23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#         hi&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Put ‘@funcB’ above ‘funcA’ means ‘funcA = funcB(funcA)’&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Let’s-make-it-general-log&quot;&gt;&lt;a href=&quot;#Let’s-make-it-general-log&quot; class=&quot;headerlink&quot; title=&quot;Let’s make it general log!&quot;&gt;&lt;/a&gt;Let’s make it general log!&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;def log(text_or_func):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	if(isinstance(text_or_func,str)):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		def decorator(func):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			def wrapper(*args,**keyw):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				date = &amp;apos;2016-12-23&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				print(text_or_func,date)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;				return func(*args,**keyw)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			return wrapper&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		return decorator&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	else:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		def wrapper(*args,**keyw):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			date = &amp;apos;2016-12-23&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			print(date)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			return text_or_func(*args,**keyw)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		return wrapper&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@log&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;def sayyeah():&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	print(&amp;apos;yeah&amp;apos;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;@log(&amp;apos;This is a custom log:&amp;apos;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;def sayhi():&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	print(&amp;apos;hi&amp;apos;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;funcA = sayhi&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;funcB = sayyeah&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;funcA()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;funcB()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# result: &amp;apos;This is a custom log: 2016-12-23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#          hi&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#          2016-12-23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#          yeah&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      Good for logging
+    
+    </summary>
+    
+      <category term="python" scheme="https://blog.starr.vip/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://blog.starr.vip/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python 高级函数</title>
+    <link href="https://blog.starr.vip/2016/12/21/Miss%20Python/"/>
+    <id>https://blog.starr.vip/2016/12/21/Miss Python/</id>
+    <published>2016-12-21T12:52:10.000Z</published>
+    <updated>2016-12-21T12:52:10.000Z</updated>
+    
+    <content type="html">&lt;hr&gt;
+&lt;h1 id=&quot;Miss-Python&quot;&gt;&lt;a href=&quot;#Miss-Python&quot; class=&quot;headerlink&quot; title=&quot;Miss Python&quot;&gt;&lt;/a&gt;Miss Python&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://static.mengniang.org/common/c/c0/Python.jpg&quot; alt=&quot;Mrs python&quot;&gt;&lt;/p&gt;
+&lt;p&gt;上个月用了两天时间捣腾Hackintosh，终于把主力笔记本换成 macos 了（嗨森），于是就开始每天和 Miss Python 谈怜爱。&lt;/p&gt;
+&lt;p&gt;今天心情不错，于是就把虚拟机里的 blog 文件夹给复制到这台 mac 上，以后每次学了点新的知识就可以做笔记了！（我发现还挺有用的，更换平台后有些要重做的环境我都是参考之前发的基础轮子）&lt;/p&gt;
+&lt;h2 id=&quot;map-reduce&quot;&gt;&lt;a href=&quot;#map-reduce&quot; class=&quot;headerlink&quot; title=&quot;map/reduce&quot;&gt;&lt;/a&gt;map/reduce&lt;/h2&gt;&lt;h3 id=&quot;map-fx-List-xx-yy-zz-将函数-f-作用到List的每个元素&quot;&gt;&lt;a href=&quot;#map-fx-List-xx-yy-zz-将函数-f-作用到List的每个元素&quot; class=&quot;headerlink&quot; title=&quot;map(fx,List[xx,yy,zz]): 将函数 f 作用到List的每个元素&quot;&gt;&lt;/a&gt;map(fx,List[xx,yy,zz]): 将函数 f 作用到List的每个元素&lt;/h3&gt;&lt;p&gt;注意： map 可以作用在Iterable的对象，如 str&lt;/p&gt;
+ &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;def check_name(str):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return str[0].upper() + str[1::].lower()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;L1 = [&amp;apos;tom&amp;apos;,&amp;apos;WINA&amp;apos;,&amp;apos;stARr&amp;apos;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;print( list ( map ( check_name, L1 ) ) )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#result: [&amp;apos;Tom&amp;apos;, &amp;apos;Wina&amp;apos;, &amp;apos;Starr&amp;apos;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;reduce-fx-List-a-b-c-d-f-f-f-a-b-c-d-：函数fx-是接受两个参数的-感觉有点像不断叠加&quot;&gt;&lt;a href=&quot;#reduce-fx-List-a-b-c-d-f-f-f-a-b-c-d-：函数fx-是接受两个参数的-感觉有点像不断叠加&quot; class=&quot;headerlink&quot; title=&quot;reduce(fx, List[a,b,c,d]) = f( f( f(a, b), c), d) ：函数fx 是接受两个参数的,感觉有点像不断叠加&quot;&gt;&lt;/a&gt;reduce(fx, List[a,b,c,d]) = f( f( f(a, b), c), d) ：函数fx 是接受两个参数的,感觉有点像不断叠加&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;from functools import reduce #要 import&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;def product(List):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	def _multiple(x,y):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		return x * y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return reduce(_multiple, List)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;print(&amp;apos;3!=&amp;apos;,product(range(1,4,1)))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#result: 3! = 6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;United-they’re-strong&quot;&gt;&lt;a href=&quot;#United-they’re-strong&quot; class=&quot;headerlink&quot; title=&quot;United, they’re strong&quot;&gt;&lt;/a&gt;United, they’re strong&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# input float_Str, want float.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;from functools import reduce&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;def float_str2float(str):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	temp = str.split(&amp;apos;.&amp;apos;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	def _make_num(x,y):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		return x*10 + y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	int_num = reduce(_make_num, map(int,temp[0]))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	float_num = reduce(_make_num, map(int,temp[1])) #都转成整数先&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	for i in range(len(temp[1])):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		float_num = float_num / 10 #将浮点转成真正的浮点&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return int_num + float_num&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;Dinner-Time&quot;&gt;&lt;a href=&quot;#Dinner-Time&quot; class=&quot;headerlink&quot; title=&quot;Dinner Time&quot;&gt;&lt;/a&gt;Dinner Time&lt;/h1&gt;&lt;p&gt;祖传意大利面&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/MEOyFxY.jpg&quot; alt=&quot;strips spaghetti&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      map/reduce, sorted, filter
+    
+    </summary>
+    
+      <category term="python" scheme="https://blog.starr.vip/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://blog.starr.vip/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>割草除虫v2</title>
+    <link href="https://blog.starr.vip/2016/10/19/firstmonth/"/>
+    <id>https://blog.starr.vip/2016/10/19/firstmonth/</id>
+    <published>2016-10-19T12:52:10.000Z</published>
+    <updated>2016-10-19T12:52:10.000Z</updated>
+    
+    <content type="html">&lt;hr&gt;
+&lt;h1 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://ws2.sinaimg.cn/large/006Bv08bgw1f8ylc3iwsaj30hs0nqtcl.jpg&quot; alt=&quot;miao&quot;&gt;&lt;br&gt;Hi, it’s me! How’s going? (I’m doing great!)&lt;br&gt;(我真的很喜欢这只喵星人啊，以后一定要做个铲屎官！)&lt;br&gt;好久都没有更新过了，发现竟然有人留言！！！ OMG！！！ 然后发现之前用的图床挂了（= =）以后都用新浪的好了&lt;br&gt;这次更新下近况, 让我用下英语， 算是练习。&lt;br&gt;I’m now in Oregon; average temporture here is 10c. #不过室内还是很舒服的&lt;br&gt;Don’t worry, guys. I’m following my friends advices and not always play with Chinese.&lt;br&gt;So I improve oral English quickly and solidly.&lt;br&gt;Moreover, I luckly have a roomate who is from Hawaii; so I talk with him every day.&lt;br&gt;刚来这的前两天，我就开好了debit card，然后有了交通工具 # Create something from nothing.&lt;br&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006Bv08bgw1f8yln5cjkqj30u0140106.jpg&quot; alt=&quot;mybike&quot;&gt;&lt;br&gt;然后更棒的是，我刚开始来的时候，先是住在Airbnb找的公寓&lt;br&gt;房东是ABC(American Born Chinese),中英文都还蛮不错的，所以刚开始半个月住她那边的时候，&lt;br&gt;给我很好的过渡时期，她一家人都挺好的，还请我去他们家享用晚餐（我就是喜欢用享用这个词）。&lt;br&gt;然后po下上周去本地农场pumpkin patch&lt;/p&gt;
+&lt;h1 id=&quot;Pumpkin-Patch&quot;&gt;&lt;a href=&quot;#Pumpkin-Patch&quot; class=&quot;headerlink&quot; title=&quot;Pumpkin Patch&quot;&gt;&lt;/a&gt;Pumpkin Patch&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://ws4.sinaimg.cn/large/006Bv08bgw1f8yln251rxj31400mi7ay.jpg&quot; alt=&quot;find_pumpkin&quot;&gt;&lt;br&gt;左边的是Joe，我们对游戏的品味是一样的（我们都喜欢P社5萌，还有2K的文明）&lt;br&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006Bv08bgw1f8yln3ppipj30u0140dlp.jpg&quot; alt=&quot;pumpkin&quot;&gt;&lt;br&gt;这里气候和加州一样是地中海气侯&lt;br&gt;&lt;img src=&quot;https://ws2.sinaimg.cn/large/006Bv08bgw1f8yln1j5u9j30u0140448.jpg&quot; alt=&quot;horse2&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://ws4.sinaimg.cn/large/006Bv08bgw1f8yln2l8ghj31400u0n2l.jpg&quot; alt=&quot;horse1&quot;&gt;&lt;br&gt;这马真的很大，据说是用来拉马车的&lt;br&gt;&lt;img src=&quot;https://ws4.sinaimg.cn/large/006Bv08bgw1f8yln30ei7j31400u0jxi.jpg&quot; alt=&quot;farm&quot;&gt;&lt;br&gt;左边有玉米田，还用来做迷宫，农场到了万圣节时期还会稍微改造下提供部分类似游乐场的功能&lt;/p&gt;
+&lt;h1 id=&quot;End&quot;&gt;&lt;a href=&quot;#End&quot; class=&quot;headerlink&quot; title=&quot;End&quot;&gt;&lt;/a&gt;End&lt;/h1&gt;&lt;p&gt;一不小心发现后台单曲循环We Don’t Talk Anymore已经两小时了 #我已经码了两小时字&lt;br&gt;最后送上rainbow 和 帅气的博主！&lt;br&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006Bv08bgw1f8yln2fqd0j3140140wjk.jpg&quot; alt=&quot;rainbow&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://ws2.sinaimg.cn/large/006Bv08bgw1f8yln2oby9j31400u0n1m.jpg&quot; alt=&quot;me&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference&lt;/h1&gt;&lt;p&gt;Noooooooooo&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      在美一个月了(多图)
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://blog.starr.vip/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="https://blog.starr.vip/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>openwrt ipv6DHCP配置</title>
+    <link href="https://blog.starr.vip/2016/08/04/openwrtInIPV6/"/>
+    <id>https://blog.starr.vip/2016/08/04/openwrtInIPV6/</id>
+    <published>2016-08-04T16:00:10.000Z</published>
+    <updated>2016-08-10T12:30:00.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;刷入正经openwrt（opkg完整的）&lt;/li&gt;
+&lt;li&gt;安装V6内核nat支持（nat &amp;amp;&amp;amp; trace）&lt;pre&gt;&lt;code&gt;opkg update
+opkg install kmod-ipt-nat6
+opkg install iputils-tracepath6
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;vi /etc/config/dhcp，修改‘lan’部分为&lt;pre&gt;&lt;code&gt;config dhcp &amp;apos;lan&amp;apos;
+    option interface &amp;apos;lan&amp;apos;
+    option start &amp;apos;100&amp;apos;
+    option limit &amp;apos;150&amp;apos;
+    option leasetime &amp;apos;12h&amp;apos;
+    option dhcpv6 &amp;apos;server&amp;apos;
+    option ra &amp;apos;server&amp;apos;
+    option ra_management &amp;apos;1&amp;apos;     #
+    option ra_default &amp;apos;1&amp;apos;        #一般是这两行要添加
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;vi /etc/firewall.user,修改防火墙,为内网访问外网 IPv6 时提供IP伪装&lt;pre&gt;&lt;code&gt;ip6tables -t nat -A POSTROUTING -o $(uci -q get network.wan6.ifname) -j MASQUERADE
+//简化版等价于 ip6tables -t nat -A POSTROUTING -o eth0.2 -j MASQUERADE
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;创建开机自启动脚本，vi /etc/hotplug.d/iface/90-ipv6 &lt;del&gt;（原文说要chmod +755，我得去学习下权限）&lt;/del&gt;//就是让它可执行，如果用root创建可以不用管&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/sh 
+[ &amp;quot;$ACTION&amp;quot; = ifup ] || exit 0
+[ &amp;quot;$INTERFACE&amp;quot; = wan6 ] &amp;amp;&amp;amp; {              
+  route -A inet6 add ::/0 gw $(tracepath6 -n tv.byr.cn | grep &amp;apos; 1: &amp;apos; | awk &amp;apos;NR==1 {print $2}&amp;apos;) dev $(uci -q get network.wan6.ifname)
+}
+//简化版等价于[ &amp;quot;$ACTION&amp;quot; = ifup ] || exit 0
+//route -A inet6 add default gw 2001:1234:1234:1234::1（需要通过tracert ipv6地址获得第一跳）
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;  由于莫名的原因，这个自动启动在我的固件（HC5661    OpenWrt Chaos Calmer 15.05）里面没有实现应该有的效果，每次开机网关并没有被自动添加到路由表上，于是我就采取另一个方法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;开机脚本大法，vi /etc/init.d/getIpv6 （注意chmod 755）&lt;pre&gt;&lt;code&gt;#!/bin/sh /etc/rc.common     #注意不是#!/bin/sh
+#/init.d/getIpv6
+START=99
+start(){
+    route -A inet6 add ::/0 gw $(tracepath6 -n ipv6.speedtest-nyc3.digitalocean.com | grep &amp;apos; 1: &amp;apos; | awk &amp;apos;NR==1 {print $2}&amp;apos;) dev $(uci -q get network.wan6.ifname)
+    mkdir /tmp/testStart
+}
+stop(){
+    mkdir /tmp/testStop
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;然后 ln -s /etc/init.d/getIpv6 /etc/rc.d/S99getIpv6 即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://www.findspace.name/easycoding/1669&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;openwrt配置IPV6 NAT &amp;amp;&amp;amp; 修改hosts&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://blog.csdn.net/cod1ng/article/details/45421025&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在OpenWrt上配置原生IPv6 NAT&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.eehello.com/m/?post=107&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Openwrt的启动过程&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      找了好久
+    
+    </summary>
+    
+      <category term="router" scheme="https://blog.starr.vip/categories/router/"/>
+    
+    
+      <category term="router" scheme="https://blog.starr.vip/tags/router/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础轮子，自用dns搭建与使用</title>
+    <link href="https://blog.starr.vip/2016/08/03/sthAboutPersonalDNSmd/"/>
+    <id>https://blog.starr.vip/2016/08/03/sthAboutPersonalDNSmd/</id>
+    <published>2016-08-03T08:30:10.000Z</published>
+    <updated>2016-08-03T10:05:00.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;母鸡配置（借助dnsmasq实现）：&quot;&gt;&lt;a href=&quot;#母鸡配置（借助dnsmasq实现）：&quot; class=&quot;headerlink&quot; title=&quot;母鸡配置（借助dnsmasq实现）：&quot;&gt;&lt;/a&gt;母鸡配置（借助dnsmasq实现）：&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;安装&lt;pre&gt;&lt;code&gt;yum install dnsmasq  #centos为例
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;配置&lt;pre&gt;&lt;code&gt;vi /etc/dnsmasq.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;添加&lt;pre&gt;&lt;code&gt;port=5151//使用默认53端口会被GFW拦截
+no-hosts//不使用本机host
+log-queries//生成日志文件
+log-facility=/var/log/dnsmasq.log
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;添加开机运行 &amp;amp;&amp;amp; 启动 （如防火墙有封相应端口记得打开）&lt;pre&gt;&lt;code&gt;chkconfig dnsmasq on
+service dnsmasq status
+service dnsmasq start
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;搞定&lt;pre&gt;&lt;code&gt;netstat -tunlp|grep 5151 #查看最终效果
+&lt;/code&gt;&lt;/pre&gt;&lt;a href=&quot;https://www.luoxufeiyan.com/2015/01/17/install-dnsmasq-centos/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;母鸡参考这篇文章&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;客户端配置&quot;&gt;&lt;a href=&quot;#客户端配置&quot; class=&quot;headerlink&quot; title=&quot;客户端配置&quot;&gt;&lt;/a&gt;客户端配置&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;~将53端口转发至母鸡(以 eth0 为默认网卡)&lt;/del&gt;~&lt;pre&gt;&lt;code&gt;iptables -t nat -A OUTPUT -o eth0 -p udp --dport 53 -j DNAT --to {ip:port}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;检查是否实现&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dig {网站}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;更好的客户机实现(Update!)(需要&lt;a href=&quot;https://github.com/felixonmars/dnsmasq-china-list&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;dnsmasq中国加速&lt;/a&gt;)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1、客户机同样安装上 dnsmasq,以及dnsmasq中国加速（随便叫的名字）
+2、vi /etc/dnsmasq.conf:
+        no-resolv
+        no-poll    #让 dnsmasq 不要通过 /etc/resolv.conf 确定上游服务器
+        server={母鸡ip#端口}      这里要用#引出端口
+        strict-order
+        conf-dir=/etc/dnsmasq.d   #dnsmasq中国加速需要
+3、vi /etc/resolv.conf(第一行修改):
+        nameserver 127.0.0.1
+3、（重新）启动dnsmasq，如果搭了VPN服务端也重启下。
+        dig {网站}            #测试
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&quot;https://wzyboy.im/post/874.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;update的方法参考这篇文章&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      自己的dns才是放心的
+    
+    </summary>
+    
+      <category term="vps" scheme="https://blog.starr.vip/categories/vps/"/>
+    
+    
+      <category term="vps" scheme="https://blog.starr.vip/tags/vps/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础轮子，hexo自动发射</title>
+    <link href="https://blog.starr.vip/2016/08/02/sthAboutAutoDeploy/"/>
+    <id>https://blog.starr.vip/2016/08/02/sthAboutAutoDeploy/</id>
+    <published>2016-08-02T08:30:10.000Z</published>
+    <updated>2016-08-02T08:35:00.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.swiftyper.com/2016/04/17/deploy-hexo-with-git-hook/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;非常感谢这个博主的文章&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;但是为了方便以后查阅还是在这里用自己的方式记录下&lt;/p&gt;
+&lt;h1 id=&quot;母鸡（VPS）上的配置：&quot;&gt;&lt;a href=&quot;#母鸡（VPS）上的配置：&quot; class=&quot;headerlink&quot; title=&quot;母鸡（VPS）上的配置：&quot;&gt;&lt;/a&gt;母鸡（VPS）上的配置：&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;首先母鸡上有关要有git&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;原博主开多了个专门的用户，但我觉得没有必要（也许以后的我会认为这是错的）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;完成基础轮子 SSH Key登录设定&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在母鸡上找个位置初始化git库（这里以 /var/repo/blog.git/ 为例）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo mkdir /var/repo
+$ cd /var/repo
+$ sudo git init --bare blog.git    #bare裸仓库，裸仓库没有工作区，我们不会在裸仓库上进行操作，它只为共享而存在。
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;配置hooks，现在的我并不明白这个，希望以后的我能比我更清楚它-&amp;gt;&lt;a href=&quot;https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHooks&lt;/a&gt;&lt;br&gt;Anyway,这里要利用git操作完成后会运行一次的 post-receive&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd /var/repo/blog.git/hooks
+$ vim post-receive    #新建这个文件
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后写入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/sh
+git --work-tree={你要部署的目录} --git-dir=/var/repo/blog.git checkout -f
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;最后要加上执行权限&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;chmod +x post-receive
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;客户机（本地）的配置：&quot;&gt;&lt;a href=&quot;#客户机（本地）的配置：&quot; class=&quot;headerlink&quot; title=&quot;客户机（本地）的配置：&quot;&gt;&lt;/a&gt;客户机（本地）的配置：&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;修改 hexo 目录下的 _config.yml 文件，找到 [deploy] 条目，并修改为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;deploy:
+  type: git
+  repo: 用户名@VPS地址:/var/repo/blog.git #SSH端口似乎一定得是默认的22端口？
+  branch: master
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;最后，发射&lt;pre&gt;&lt;code&gt;hexo clean &amp;amp;&amp;amp; hexo generate --deploy
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      简单点，发射的方式简单点
+    
+    </summary>
+    
+      <category term="blog" scheme="https://blog.starr.vip/categories/blog/"/>
+    
+    
+      <category term="blog" scheme="https://blog.starr.vip/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基础轮子，SSH KEY登录</title>
+    <link href="https://blog.starr.vip/2016/08/02/sthAboutSSH/"/>
+    <id>https://blog.starr.vip/2016/08/02/sthAboutSSH/</id>
+    <published>2016-08-02T08:30:10.000Z</published>
+    <updated>2016-08-02T08:35:00.000Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;关于创建客户机公私钥&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;密钥导入母鸡&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1、上传公钥
+2、cat id_rsa.pub &amp;gt;&amp;gt; ~/.ssh/authorized_keys
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;关闭密码登录（端口也是在这个文件中定义，但一般还是不要改比较方便）&lt;pre&gt;&lt;code&gt;1.vi /etc/ssh/sshd_config
+2.Modify those lines:
+        PubkeyAuthentication          yes
+        AuthorizedKeysFile           .ssh/authorized_keys
+        PasswordAuthentication      no
+3.service sshd restart  #centos是这个，别的unix可能不一样
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      又快又安全
+    
+    </summary>
+    
+      <category term="linux" scheme="https://blog.starr.vip/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://blog.starr.vip/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>割草除虫</title>
+    <link href="https://blog.starr.vip/2016/08/01/daily82/"/>
+    <id>https://blog.starr.vip/2016/08/01/daily82/</id>
+    <published>2016-08-02T03:30:10.000Z</published>
+    <updated>2016-08-02T03:35:00.000Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;留学&lt;ul&gt;
+&lt;li&gt;7月初去广州的美领馆面签了，港真，第一次见到中文说这么溜的老外我的内心是十分兴奋的（因为其中有几个妹纸工作人员很pretty)&lt;/li&gt;
+&lt;li&gt;一周后拿到了签证，喜，因为照片帅&lt;/li&gt;
+&lt;li&gt;入学前还要网考数学和英语，还要全程摄像头监控，羞耻play，这周得完成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;计算机&lt;ul&gt;
+&lt;li&gt;之前一直通过虚拟机和VPS体验linux，暑假刚开始就把主力机整个换到ubuntu上，折腾的地方也不算多，就是主板网卡驱动有个bug，把google翻了个底朝天也算找到完美的workaround（这个词刚学的）&lt;/li&gt;
+&lt;li&gt;游戏的话最近入了ARK方舟的坑，港真这游戏优化确实烂，等我到了美帝得换张好点的显卡才行&lt;/li&gt;
+&lt;li&gt;我正在研究怎么在linux推文章，这篇还是通过虚拟机的win7完成的&lt;/li&gt;
+&lt;li&gt;然后关于这个blog我想以后造好一个轮子就写篇教程，以便以后有需要的时候可以查阅&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      最近的日常
+    
+    </summary>
+    
+      <category term="正经" scheme="https://blog.starr.vip/categories/%E6%AD%A3%E7%BB%8F/"/>
+    
+    
+      <category term="懒癌日常" scheme="https://blog.starr.vip/tags/%E6%87%92%E7%99%8C%E6%97%A5%E5%B8%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我是怎么一步步完成自动发送博文的</title>
+    <link href="https://blog.starr.vip/2016/05/27/test-autoDeploy/"/>
+    <id>https://blog.starr.vip/2016/05/27/test-autoDeploy/</id>
+    <published>2016-05-28T01:25:10.000Z</published>
+    <updated>2016-05-30T06:35:00.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;自动推送测试&quot;&gt;&lt;a href=&quot;#自动推送测试&quot; class=&quot;headerlink&quot; title=&quot;自动推送测试&quot;&gt;&lt;/a&gt;自动推送测试&lt;/h1&gt;&lt;p&gt;在这之前，每次发新博客如果按如下步骤进行：&lt;/p&gt;
+&lt;p&gt;1.打开node&lt;/p&gt;
+&lt;p&gt;2.输入hexo new “new post”&lt;/p&gt;
+&lt;p&gt;3.编辑md文件（写作）&lt;/p&gt;
+&lt;p&gt;6.打开git&lt;/p&gt;
+&lt;p&gt;7/8/9.输入相关的三行命令并输入密码上传更新&lt;/p&gt;
+&lt;p&gt;简直逼疯一个懒癌末期患者有木有！&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;第二阶段（设置自动登陆和服务器端的自动发送），需要：&lt;/p&gt;
+&lt;p&gt;1.打开node&lt;/p&gt;
+&lt;p&gt;2.输入hexo new “new post”&lt;/p&gt;
+&lt;p&gt;3.编辑md文件（写作）&lt;/p&gt;
+&lt;p&gt;4。在node里输入hexo clean &amp;amp;&amp;amp; hexo generate –deploy 发射&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;最终完成版（将命令整合到bat文件）：&lt;/p&gt;
+&lt;p&gt;1.编辑md文件（写作）&lt;/p&gt;
+&lt;p&gt;2.点击 一键发射.bat&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.bqshe.com/cache/photo/0/4/150/4433.jpg&quot; alt=&quot;4433.jpg&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      懒癌患者的日常
+    
+    </summary>
+    
+      <category term="test" scheme="https://blog.starr.vip/categories/test/"/>
+    
+    
+      <category term="test" scheme="https://blog.starr.vip/tags/test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>starr &amp; scar</title>
+    <link href="https://blog.starr.vip/2016/05/27/starr&scar/"/>
+    <id>https://blog.starr.vip/2016/05/27/starr&scar/</id>
+    <published>2016-05-27T09:00:09.000Z</published>
+    <updated>2016-12-24T02:22:22.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;切入点&quot;&gt;&lt;a href=&quot;#切入点&quot; class=&quot;headerlink&quot; title=&quot;切入点&quot;&gt;&lt;/a&gt;切入点&lt;/h1&gt;&lt;p&gt;最近几周的股市行情非常适合做波段短线，像我这种不正经的投机份子也是获利了几个百分点。&lt;/p&gt;
+&lt;p&gt;然而一直有两支股票一直在提醒着我股市的凶险&lt;br&gt;&lt;img src=&quot;http://two.yt/images/2016/05/27/qAg.png&quot; alt=&quot;捕获.PNG&quot;&gt;&lt;/p&gt;
+&lt;p&gt;我是硬生生地从15年的牛市一直持有到现在（已超过一年），一支已经经历了两次分红送股，还有一支正在准备第二次分红送股。&lt;/p&gt;
+&lt;p&gt;然而它们的成本价已经越来越难以攀上，这是&lt;strong&gt;scar&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;这一年来，每次打开证券系统，我只能眼睁睁看着亏损越来越重，但是却舍不得割肉卖出，我的内心OS是这么想的：“反正亏这么多了，再亏着等等吧，或许还有希望。”&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;等等，这种想法怎么这么似曾相识！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这难道不是曾经谈恋爱被拒后的感觉吗！&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;中二的全程模拟&quot;&gt;&lt;a href=&quot;#中二的全程模拟&quot; class=&quot;headerlink&quot; title=&quot;中二的全程模拟&quot;&gt;&lt;/a&gt;中二的全程模拟&lt;/h1&gt;&lt;p&gt;我试着以证券操作的角度重新看待全程：&lt;/p&gt;
+&lt;p&gt;令女主=starr，starr.SetAge(19),男主.SetAge(19)&lt;/p&gt;
+&lt;h2 id=&quot;初见-入股&quot;&gt;&lt;a href=&quot;#初见-入股&quot; class=&quot;headerlink&quot; title=&quot;初见/入股&quot;&gt;&lt;/a&gt;初见/入股&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;14年11月，我们通过社团活动认识，恰逢社团组织天使和国王游戏，下定决心用1/3生活费匿名连送一个月早餐。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;14年11月初发现个股starr，分析研究后看涨，买入1/3仓位。&lt;/p&gt;
+&lt;h2 id=&quot;追求-追涨&quot;&gt;&lt;a href=&quot;#追求-追涨&quot; class=&quot;headerlink&quot; title=&quot;追求/追涨&quot;&gt;&lt;/a&gt;追求/追涨&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;在随后个月中，多次与starr约会，我们在海边看了一次完美的日落，在她家中做了几顿午餐晚餐，一次完成了一个玻璃球小屋，看了几次电影，看了次宫崎骏音乐会，我们也很快成为好朋友。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;股价走势良好，多次补仓追涨，仓位已经接近满仓&lt;/p&gt;
+&lt;h2 id=&quot;告白-侥幸&quot;&gt;&lt;a href=&quot;#告白-侥幸&quot; class=&quot;headerlink&quot; title=&quot;告白/侥幸&quot;&gt;&lt;/a&gt;告白/侥幸&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;然而人是贪婪的，我脑子有坑得做了人生最糟糕的决定，试图进一步发展关系，草率告白，然而时机未到——被残忍拒绝。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;变盘点到了，股价暴跌，已经成了挂上ST的亏损股，而我却依旧看涨。&lt;/p&gt;
+&lt;h2 id=&quot;被拒后-止损&quot;&gt;&lt;a href=&quot;#被拒后-止损&quot; class=&quot;headerlink&quot; title=&quot;被拒后/止损&quot;&gt;&lt;/a&gt;被拒后/止损&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;随后1个月，我们互删了社交账号（我提出的），我本以为我能够忘记她。（我也不知道为什么当时只是被拒了一次就感受到了莫大的打击）
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;开始出货，准备割肉。&lt;/p&gt;
+&lt;h2 id=&quot;反刍-不操作&quot;&gt;&lt;a href=&quot;#反刍-不操作&quot; class=&quot;headerlink&quot; title=&quot;反刍/不操作&quot;&gt;&lt;/a&gt;反刍/不操作&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;然而，我失败了。她是，曾是我大学生活圈中最棒的朋友，甚至可以用soulmate来形容。离开她后的一切变得那么的无趣，我开始尝试挽回，我希望我们能够重新开始。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;停止割肉，有了补仓的心。&lt;/p&gt;
+&lt;h2 id=&quot;挣扎-放弃治疗&quot;&gt;&lt;a href=&quot;#挣扎-放弃治疗&quot; class=&quot;headerlink&quot; title=&quot;挣扎/放弃治疗&quot;&gt;&lt;/a&gt;挣扎/放弃治疗&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;要说明一点，这段时间我都没有去打扰过她，不像网上一些逗逼死缠烂打，因为我不知道她是不是真的就那么不喜欢我（不自信），我很尊重她的选择。但是我又很想再回到她的生活圈。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;开始酝酿如何科学补仓。&lt;/p&gt;
+&lt;h2 id=&quot;继续挣扎-继续放弃治疗&quot;&gt;&lt;a href=&quot;#继续挣扎-继续放弃治疗&quot; class=&quot;headerlink&quot; title=&quot;继续挣扎/继续放弃治疗&quot;&gt;&lt;/a&gt;继续挣扎/继续放弃治疗&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;她的生日到了，我给她送了个openwrt的路由器（对，不是花），这个路由安装了ss插件，通过IPV6+我的VPS可以实现免费上网（我们学校v6网络不要钱）。她也很喜欢，从那后就不需要交网费了，而且还能扶墙。
+我还弄了个py脚本放在vps里，每天早上7点半自动发送简练天气预报给她（匿名的她不知道谁发的，然后是调用百度的API,还是挺准的说）
+还有就是我送给她一个用来反代google的域名，希望对她计算机学科的学习有所帮助
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;开始一系列补仓&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;这段时间，我们都是通过邮件交流的T-T。而且语气都是十分的friendly(“只是非常普通的朋友ly”），她的回复也是简短有礼貌。怎么说呢，她也许真的以为我就这么放弃了吧，毕竟我这么安静，只是偶尔过节送点礼物。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;补仓的过程，股价持续下跌，越跌我越买，亏损数值持续扩大。&lt;/p&gt;
+&lt;h2 id=&quot;残酷现实-确认亏损&quot;&gt;&lt;a href=&quot;#残酷现实-确认亏损&quot; class=&quot;headerlink&quot; title=&quot;残酷现实/确认亏损&quot;&gt;&lt;/a&gt;残酷现实/确认亏损&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;下学期就要出国了，可能我和她以后不会有什么来往了吧。我觉得我已经看得开了，毕竟过去快两年。也许就是这样了吧。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;停止操作，也不打算清仓了，就像每天打开证券交易软件看着这部分资产一点点的贬值，但也不心疼，因为已经麻木。或许哪天打开这个交易软件，发现这支股票退市了也会没有感觉。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h1&gt;&lt;p&gt;于是，starr变成了scar，我不再指望能和starr重新开始，也不希望将她遗忘。&lt;/p&gt;
+&lt;p&gt;我每天还是会想到她，会打开vps的后台输入netstat命令，看着她的IP和我的IP接入的是同一个端口，想到在互联网上，我们其实是同一个IP地址，我会觉得，我们是在一起的，至少，有那么一个平行宇宙，我们是在一起的。&lt;/p&gt;
+&lt;p&gt;终于能把这段故事写成文字了而且是我真正意义上的开篇博文，感觉也是挺有意义的。最后，希望自己能在感情和资本的证券市场多赚几个点吧。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://two.yt/images/2016/05/27/M20.jpg&quot; alt=&quot;下载.jpg&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      如果不能再拥有，那就试着不去忘记
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://blog.starr.vip/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="情感" scheme="https://blog.starr.vip/tags/%E6%83%85%E6%84%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test-write</title>
+    <link href="https://blog.starr.vip/2016/05/25/My%20first%20blog/"/>
+    <id>https://blog.starr.vip/2016/05/25/My first blog/</id>
+    <published>2016-05-26T06:58:09.000Z</published>
+    <updated>2016-12-24T02:22:34.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;My-first-blog&quot;&gt;&lt;a href=&quot;#My-first-blog&quot; class=&quot;headerlink&quot; title=&quot;My first blog&quot;&gt;&lt;/a&gt;My first blog&lt;/h1&gt;&lt;p&gt;Hey guys &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This is my blog&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;建站成功！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;data:image/jpeg;base64,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&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      Hello World!
+    
+    </summary>
+    
+      <category term="test" scheme="https://blog.starr.vip/categories/test/"/>
+    
+    
+      <category term="test" scheme="https://blog.starr.vip/tags/test/"/>
+    
+  </entry>
+  
+</feed>

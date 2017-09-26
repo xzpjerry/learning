@@ -1,0 +1,11 @@
+limit_req_zone $binary_remote_addr zone=php:10m rate=2r/s; 
+
+在 server{} 里的 location ~ [^/]\.php(/|$) {} 里加上 
+
+limit_req zone=php burst=16; 
+
+这样就能限制每 IP 每秒最多两次请求，否则 503 。静态内容不受影响 
+
+这能有效解决 CPU 占用问题，然后再配合各种插件，通过 PHP 再加一层屏蔽，这种方法没前者高效，但同样必要。 
+
+log_not_found off; —— 404 页面不去记录日志
